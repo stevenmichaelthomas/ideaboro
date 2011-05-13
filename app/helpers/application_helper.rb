@@ -1,8 +1,13 @@
 module ApplicationHelper
 #Page specific titles -ST
-def title
-	base_title = "Ideaborough"
-		return base_title if @title.nil?
-		return "#{base_title} | #{@title}"
-end
+	def title
+		base_title = "Ideaborough"
+			return base_title if @title.nil?
+			return "#{base_title} | #{@title}"
+	end
+#Logo definition
+	def logo
+		image_tag("logo.png", :alt => "Ideaborough", :class => "round")	
+	end
+
 end
