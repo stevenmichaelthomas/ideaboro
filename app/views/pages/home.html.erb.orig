@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+ 
+<table class="profile" summary="Profile information">
+  <tr>
+<td class="main">
+	IMAGE
+</td>
+<td>
+<div align="right">
+<blockquote>
+I had this great idea once, but I was too busy to work on it, so I sent it to my gmail.<br />
+It was never seen again.
+</blockquote>
+</div>
+		<%= link_to "Click here to save your ideas from the depths of your gmail account.", signup_path, :class => "signup_button round" %>
+</td>
+</tr>
+</table>
+ 
+=======
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      IMAGE
+    </td>
+    <td>
+     <div align="right"> <blockquote>
+	I had a great idea once but I was too busy to work on it, so I sent it to my gmail.<br />
+	It was never seen again.</blockquote><br />
+    <%= link_to "Click here to send your ideas somewhere safe", signup_path, :class => "signup_button round" %>
+	</div>
+	</td>
+  </tr>
+</table>
+
+
+>>>>>>> signinout
