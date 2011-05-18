@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {font-family:"Helvetica Neue", Arial, "Lucida Grande", sa
 code {font:.9em "Courier New", Monaco, Courier, monospace;}
 a img {border:none;}
 p img.top {margin-top:0;}
-blockquote {margin:1.5em;padding:1em;font-style:italic;font-size:.9em;}
+blockquote {font-family:"Georgia", Times, serif;margin:1.5em;padding:1em;font-style:italic;font-size:150%;}
 .small {font-size:.9em;}
 .large {font-size:1.1em;}
 .quiet {color:#999;}
