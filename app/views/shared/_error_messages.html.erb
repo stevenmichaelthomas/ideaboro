@@ -1,8 +1,8 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
-    <h4><%= pluralize(@user.errors.count, "thing") %> 
-        made it so that we couldn't create your account:</h4>
-    <ul> <% @user.errors.full_messages.each do |msg| %>
+    <h4><%= pluralize(object.errors.count, "thing") %> 
+        made it so that this <%= object.class.to_s.underscore.humanize.downcase %> couldn't be saved:</h4>
+    <ul> <% object.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
     </ul>

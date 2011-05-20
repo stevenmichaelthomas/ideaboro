@@ -7,8 +7,9 @@
       </h1>
     </td>
     <td class="sidebar round">
-      <strong><%= link_to "Browse Ideas", @user %></strong><br />
-	  <strong>Ideas:</strong> <%= User.count %> <!-- Update this with the number of ideas when possible -->
-    </td>
+	  <strong>Ideas:</strong> <%= User.count %> <br /><!-- Update this with the number of ideas when possible -->
+	  <strong><%= link_to "Browse Ideas", @user %></strong><br />
+      <strong><%= link_to "Edit Profile", edit_user_path(current_user) %></strong>
+	</td>
   </tr>
 </table>
