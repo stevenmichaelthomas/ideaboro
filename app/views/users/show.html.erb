@@ -2,13 +2,21 @@
   <tr>
     <td class="main">
       <h1>
-        <%= gravatar_for @user %>
+        <%= link_to default, root_path %>
+		<!-- <%= gravatar_for @user %> Until fully online -->
         <%= @user.name %>
       </h1>
-    </td>
+	  
+    <% unless @user.microposts.empty? %>
+        <table class="microposts" summary="User microposts">
+          <%= render @microposts %>
+        </table>
+        <%= will_paginate @microposts %>
+      <% end %>
+	</td>
     <td class="sidebar round">
-	  <strong>Ideas:</strong> <%= User.count %> <br /><!-- Update this with the number of ideas when possible -->
-	  <strong><%= link_to "Browse Ideas", @user %></strong><br />
+	  <strong>Ideas:</strong> <%= @user.microposts.count %> <br />
+	  <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
       <strong><%= link_to "Edit Profile", edit_user_path(current_user) %></strong>
 	</td>
   </tr>

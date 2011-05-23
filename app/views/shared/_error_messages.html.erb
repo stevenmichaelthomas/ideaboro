@@ -1,7 +1,7 @@
-<% if @user.errors.any? %>
+<% if object.errors.any? %>
   <div id="error_explanation">
-    <h4><%= pluralize(object.errors.count, "thing") %> 
-        made it so that this <%= object.class.to_s.underscore.humanize.downcase %> couldn't be saved:</h4>
+  <!--  <h4><%= pluralize(object.errors.count, "thing") %> 
+        made it so that this <%= object.class.to_s.underscore.humanize.downcase %> couldn't be saved:</h4> -->
     <ul> <% object.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
