@@ -1,14 +1,16 @@
 <tr>
-  <td class="gravatar">
+ <!--  <td class="gravatar">
     <%= link_to default, root_path %>
-	<!-- <%= link_to gravatar_for(feed_item.user), feed_item.user %> -->
-  </td>
+	<%= link_to gravatar_for(feed_item.user), feed_item.user %> 
+  </td> -->
   <td class="micropost">
    <!-- <span class="user">
       <%= link_to feed_item.user.name, feed_item.user %> 
     </span> COMMENTED OUT BECAUSE DON'T NEED USERNAME AT THIS POINT -->
-    <span class="content"><%= feed_item.content %></span>
-    <span class="timestamp">
+    <span class="coreidea"><h3>Your ideas so far</h3></span>
+	<span class="coreidea"><strong><%= feed_item.coreidea %></strong></span><br />
+	<span class="content"><%= feed_item.content %></span>
+    <span class="timestamp" align = "right">
       Conceived <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>
   </td>

@@ -16,7 +16,7 @@ before_filter :correct_user, :only => [:show]
    if @user.save #if this is possible, do it
    sign_in @user
    flash[:success] = "Welcome to Ideaborough."
-    redirect_to @user
+    redirect_to root_path
    else
    @title = "Sign up"
    @user.password = ""

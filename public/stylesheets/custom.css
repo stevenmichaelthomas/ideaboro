@@ -136,6 +136,7 @@ td.sidebar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
+
 div.field, div.actions {
   margin-top: 10px;
 }
@@ -232,4 +233,7 @@ form.new_micropost {
 form.new_micropost textarea {
   height: 4em;
   margin-bottom: 0;
+}
+.fieldtitle {
+margin-bottom: -18px
 }
