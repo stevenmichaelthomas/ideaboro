@@ -206,7 +206,7 @@ table.microposts tr td.micropost {
 
 table.microposts tr td.micropost span.timestamp {
   display: block;
-  font-size: 85%;
+  font-size: 75%;
   color: #666;
 }
 
@@ -235,5 +235,16 @@ form.new_micropost textarea {
   margin-bottom: 0;
 }
 .fieldtitle {
-margin-bottom: -18px
+margin-bottom: -19px;
+font-size: 75%
+}
+.ideassofar {
+font-size: 125%;
+}
+.deleteexpand {
+font-size: 75%;
+text-align: right;
+}
+.content {
+white-space:pre-wrap
 }

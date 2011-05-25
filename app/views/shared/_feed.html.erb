@@ -1,4 +1,5 @@
 <% unless @feed_items.empty? %>
+  <span class="ideassofar">Your ideas so far</span>
   <table class="microposts" summary="User microposts">
     <%= render :partial => 'shared/feed_item', :collection => @feed_items %>
   </table>

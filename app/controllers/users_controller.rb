@@ -40,12 +40,13 @@ before_filter :correct_user, :only => [:show]
 	  render 'edit'
 	end
 end
+
 	def show
     @user = User.find(params[:id])
     @microposts = @user.microposts.paginate(:page => params[:page])
     @title = @user.name
   end
-private
+  private
   def authenticate
     deny_access unless signed_in?
   end
