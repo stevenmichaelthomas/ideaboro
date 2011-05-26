@@ -7,7 +7,7 @@
    <!-- <span class="user">
       <%= link_to feed_item.user.name, feed_item.user %> 
     </span> COMMENTED OUT BECAUSE DON'T NEED USERNAME AT THIS POINT -->
-	<span class="coreidea"><strong><%= feed_item.coreidea %></strong></span><br />
+	<span class="coreidea"><strong><%= link_to feed_item.coreidea, feed_item %></strong></span><br />
 	<span class="content"><%= feed_item.content %></span><br />
     <span class="timestamp" align = "right">
       Conceived <%= time_ago_in_words(feed_item.created_at) %> ago.
@@ -16,7 +16,7 @@
   <% if current_user?(feed_item.user) %>
   <td>
   <div class = "deleteexpand">
-    <%= link_to "expand", "#" %><br />
+	<%= link_to "expand", feed_item %><br />
 	<%= link_to "delete", feed_item, :method => :delete,
                                      :confirm => "Are you sure?",
                                      :title => feed_item.content %>

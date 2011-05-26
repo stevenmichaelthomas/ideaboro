@@ -202,6 +202,7 @@ table.microposts tr td.micropost {
   border-top: 1px solid #ccc;
   vertical-align: top;
   padding-top: 10px;
+
 }
 
 table.microposts tr td.micropost span.timestamp {
@@ -248,3 +249,6 @@ text-align: right;
 .content {
 white-space:pre-wrap
 }
+.blockblock {
+  display: block
+  }

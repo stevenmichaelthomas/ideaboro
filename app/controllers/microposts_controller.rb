@@ -12,6 +12,15 @@ class MicropostsController < ApplicationController
     end
   end
 
+def show
+@user = current_user
+@micropost = @user.microposts.find(params[:id]) 
+end
+
+def edit
+ @micropost  = Micropost.find(params[:id])
+end 
+ 
 def destroy
  @micropost.destroy
  redirect_to root_path
