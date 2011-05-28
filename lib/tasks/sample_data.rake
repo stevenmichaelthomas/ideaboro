@@ -1,9 +1,9 @@
-
+require 'faker'
 
 namespace :db do
   desc "Fill database with sample data"
   task :populate => :environment do
-  require 'faker'
+
     Rake::Task['db:reset'].invoke
     User.create!(:name => "Example User",
                  :email => "example@railstutorial.org",
@@ -22,7 +22,12 @@ namespace :db do
           50.times do
         user.microposts.create!(:content => Faker::Lorem.sentence(5),
 								:coreidea => "This is the core idea")
-      end
-    end
+	  end
+	  end
+      Micropost.all(:limit => 6).each do |micropost|
+          50.times do
+        micropost.comments.create!(:comment => "Testing")
+	  end
+	end
   end
 end

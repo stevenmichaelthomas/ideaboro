@@ -258,3 +258,7 @@ padding: 0.5em;
 font-family:"Georgia", Times, serif;
 font-style:italic;
 font-size:120%;
+textarea.comments {
+height: 20 px;
+width: 50px;
+}

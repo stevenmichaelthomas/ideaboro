@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110525064051) do
+ActiveRecord::Schema.define(:version => 20110527114731) do
 
   create_table "comments", :force => true do |t|
     t.string   "comment"
@@ -19,11 +19,7 @@ ActiveRecord::Schema.define(:version => 20110525064051) do
     t.datetime "updated_at"
   end
 
-  create_table "coreideas", :force => true do |t|
-    t.string   "coreidea"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+  add_index "comments", ["micropost_id"], :name => "index_comments_on_micropost_id"
 
   create_table "microposts", :force => true do |t|
     t.string   "content"

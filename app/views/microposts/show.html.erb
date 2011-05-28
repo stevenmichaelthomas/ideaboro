@@ -4,3 +4,11 @@
 <p>
 <%= @micropost.content %>
 </p>
+<% @micropost.comments.each do |comment| %>
+<p>
+<%= comment.comment %>
+</p>
+<% end %>
+<div>
+<%= render 'shared/comment_form' %>
+</div>
