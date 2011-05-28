@@ -1,7 +1,6 @@
 
 
 namespace :db do
-require 'faker'
   desc "Fill database with sample data"
   task :populate => :environment do
 
@@ -11,6 +10,7 @@ require 'faker'
                  :password => "foobar",
                  :password_confirmation => "foobar")
     99.times do |n|
+	require 'faker'
       name  = Faker::Name.name
       email = "example-#{n+1}@railstutorial.org"
       password  = "password"
