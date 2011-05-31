@@ -32,6 +32,7 @@ section h1 {
 /* Links */
 
 a {
+  color: #303030;
   text-decoration: none;
 }
 
@@ -41,7 +42,6 @@ a:hover {
 }
 
 a:visited {
-  color: #BDBDBD;
 }
 
 /* Navigation */
