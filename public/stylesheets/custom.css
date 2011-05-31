@@ -41,7 +41,7 @@ a:hover {
 }
 
 a:visited {
-  color: #4a4a4a;
+  color: #BDBDBD;
 }
 
 /* Navigation */
@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: #4a4a4a;
+  color: #BDBDBD;
 }
 
 nav ul li a:hover {
