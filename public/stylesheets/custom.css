@@ -1,3 +1,6 @@
+h1 {
+font-family: "Georgia", Times, Serif;
+}
 .container {
   width: 710px;
 }
@@ -29,12 +32,12 @@ section h1 {
 /* Links */
 
 a {
-  color: #303030;
+  color: #960025;
   text-decoration: none;
 }
 
 a:hover {
-  color: #303030;
+  color: #960025;
   text-decoration: underline;
 }
 
@@ -75,6 +78,7 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
+color: #960025;
   text-decoration: underline;
 }
 
@@ -256,7 +260,6 @@ white-space:pre-wrap
 margin-top: 160px;
 padding: 0.5em;
 font-family:"Georgia", Times, serif;
-font-style:italic;
 font-size:120%;
 textarea.comments {
 height: 20 px;
