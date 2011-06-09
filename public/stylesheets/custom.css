@@ -72,7 +72,7 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a:visited {
+nav ul li a:visited {d
 }
 
 nav ul li a:hover {
@@ -223,6 +223,7 @@ div.user_info a {
 
 div.user_info span.user_name {
   position: absolute;
+  padding: 5px;
 }
 
 div.user_info span.microposts {

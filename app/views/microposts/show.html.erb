@@ -5,8 +5,9 @@
 <%= @micropost.content %>
 </p>
 <% @micropost.comments.each do |comment| %>
-<p>
-<%= comment.comment %>
+<p><ul>
+<li><%= comment.comment %>
+</ul>
 </p>
 <% end %>
 <div>
