@@ -256,11 +256,13 @@ white-space:pre-wrap
   display: block
 }
 .what {
-margin-top: 160px;
 padding: 0.5em;
 font-family:"Georgia", Times, serif;
 font-size:120%;
-textarea.comments {
-height: 20 px;
-width: 50px;
+}
+.txxxt {
+font-family:"Georgia", Times, serif;
+font-size:1000%;
+position:fixed; top:150px; left:360px;
+color:#E0E0E0;
 }

@@ -1,12 +1,13 @@
+<h1>Idea #<%= SecureRandom.random_number(99999) %></h1><br/>
 <p>
-<strong><%= @micropost.coreidea %></strong>
+<strong><%= simple_format(auto_link(@micropost.coreidea)) %></strong>
 </p>
 <p>
-<%= @micropost.content %>
+<%= simple_format(auto_link(@micropost.content)) %>
 </p>
 <% @micropost.comments.each do |comment| %>
 <p><ul>
-<li><%= comment.comment %>
+<li><%= simple_format(auto_link(comment.comment)) %>
 </ul>
 </p>
 <% end %>

@@ -1,6 +1,7 @@
-class Micropost < ActiveRecord::Base
+class Micropost < ActiveRecord::Base	
+
 	attr_accessible :content, :coreidea
-	
+	 
 	belongs_to :user
 	has_many :comments, :dependent => :destroy
 	
@@ -9,4 +10,6 @@ class Micropost < ActiveRecord::Base
 	validates :user_id, :presence => true
 	
 	default_scope :order => 'microposts.created_at DESC'
+	
+	
 end

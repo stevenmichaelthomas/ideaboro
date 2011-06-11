@@ -8,7 +8,7 @@
       <%= link_to feed_item.user.name, feed_item.user %> 
     </span> COMMENTED OUT BECAUSE DON'T NEED USERNAME AT THIS POINT -->
 	<span class="coreidea"><strong><%= link_to feed_item.coreidea, feed_item %></strong></span><br />
-	<span class="content"><%= feed_item.content %></span><br />
+	<span class="content"><%= simple_format(auto_link(feed_item.content)) %></span><br />
     <span class="timestamp" align = "right">
       Conceived <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>

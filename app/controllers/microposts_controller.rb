@@ -1,4 +1,5 @@
 class MicropostsController < ApplicationController
+ 
  before_filter :authorized_user, :only => :destroy
 
   def create
@@ -14,7 +15,7 @@ class MicropostsController < ApplicationController
 
 def show
 @user = current_user
-@micropost = @user.microposts.find(params[:id]) 
+@micropost = @user.microposts.find(params[:id])
 #@comments = @micropost.comments.new
 end
 
