@@ -14,10 +14,10 @@ before_filter :correct_user, :only => [:show]
   def create
   @user = User.new(params[:user])
    if @user.save #if this is possible, do it
-    UserMailer.welcome_email(@user).deliver
 	sign_in @user
     flash[:success] = "Welcome to Ideaborough."
-    redirect_to root_path
+   # UserMailer.welcome_email(@user).deliver
+	redirect_to root_path
    else
    @title = "Sign up"
    @user.password = ""
