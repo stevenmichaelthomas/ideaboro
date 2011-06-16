@@ -2,9 +2,7 @@ class UserMailer < ActionMailer::Base
   default :from => "steve@ideaborough.com"
   
   def welcome_email(user)
-   @user = user
-   @url = signin_path
-   mail(:to => @user.email,
-        :subject => "Welcome to Ideaborough")
+    @user = user
+    mail(:to => user.email, :subject => "Welcome to Ideaborough")
   end
 end

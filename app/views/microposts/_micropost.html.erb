@@ -1,7 +1,7 @@
 <tr>
   <td class="micropost">
-    <span class="content"><strong><%= micropost.coreidea %></strong></span><br />
-	<span class="content"><%= micropost.content %></span>
+    <span class="content"><strong><%= simple_format(auto_link(micropost.coreidea)) %></strong></span><br />
+	<span class="content"><%= simple_format(auto_link(micropost.content)) %></span>
     <span class="timestamp" align ="right">
       Conceived <%= time_ago_in_words(micropost.created_at) %> ago.
     </span>
